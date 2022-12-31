@@ -1,7 +1,5 @@
 # New-Yorker-case-study
 
-This explains contents the how to run the code 
-
 ## *Problem 1- Reporting*
 
 ### For detailed implementation please refer ./nbs/exploratory.ipynb 
@@ -14,6 +12,14 @@ This explains contents the how to run the code
 - D) Individual vs. All- Based on requirement reports for all products(total no vary based on fitering criteria) or customized for few products. Can be explored a particular product in detail.
 
 ### Instruction to generate Reports(both for all items and customized) 
+
+- Clone the repository 
+
+```bash
+{
+      git clone git@github.com:nitsourish/New-Yorker-case-study.git
+}
+```
 
 #### scripts 
 - report_all.py
@@ -33,7 +39,11 @@ parser.add_argument('-prod','--product_name', type = str, metavar = '',required=
 
 - A) For all items
 
-     python report_all.py -p 0.01 -ph 'prod_name' -n 3 -m 100
+```bash
+{
+      python report_all.py -p 0.01 -ph 'prod_name' -n 3 -m 100
+}
+```
 
 - B) For list of items
 
@@ -43,8 +53,11 @@ With same command line instruction, make following change in script:
   
  - C) For individual item detailed report
  
-      python individual.py -p 0.01 -prod 'Perrie Slim Mom Denim TRS' -n 3 -m 100 > output.log
- 
+ ```bash
+{
+     python individual.py -p 0.01 -prod 'Perrie Slim Mom Denim TRS' -n 3 -m 100 > output.log
+}
+```
 
 ## *Problem 2: Interesting Problem - Product level Forecasting(of filtered products)*
 
@@ -60,6 +73,7 @@ With same command line instruction, make following change in script:
   - B) Alternatively next day forecasting can be done based on last day price level
 
 ### Instruction to generate results 
+- clone the repository
 
 #### scripts 
 - forecasting_train_validation.py
@@ -69,10 +83,17 @@ With same command line instruction, make following change in script:
 
 - A) For Model Data prep and model training-validation
 
-     python forecasting_train_validation.py > output.log
+ ```bash
+{
+    python forecasting_train_validation.py > output.log
+}
+```    
 
 (To change filtering criteria for eligible product selection need to change penetration and or cum_sales_fraction arguments of function data_prep. For example to select more product reducee the penetration value to penetration=0.001,i.e. data_prep(transaction = train,products=products,penetration=0.001, cum_sales_fraction=0.0)
 
 - B) For forecasting/inference
-
-     python forecasting_inference.py > output.log
+ ```bash
+{
+    python forecasting_inference.py > output.log
+}
+``` 
