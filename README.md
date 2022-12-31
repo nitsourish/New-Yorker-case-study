@@ -99,7 +99,7 @@ With same command line instruction, make following change in script:
 
 - B) For forecasting/inference
 
-  As the models are not uploaded please run ```bash forecasting_train_validation.py first ```
+  As the models are not uploaded please run ``` forecasting_train_validation.py first ```
 
  ```bash
 
