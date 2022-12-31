@@ -15,11 +15,11 @@ This explains contents the how to run the code
 
 ### Instruction to generate Reports(both for all items and customized) 
 
-###### scripts 
+#### scripts 
 - report_all.py
 - individual_report.py
 
-###### List of CMD argparse
+##### List of CMD argparse
 
 parser.add_argument('-m','--min_cnt', type = int, metavar = '',required=True,default=0,help='minimum order count for eligible article_id')
 parser.add_argument('-p','--penetration', type = float, metavar = '',required=True,help='Fraction of unique customers for eligible article_id')
@@ -29,7 +29,7 @@ parser.add_argument('-all','--all', type = bool, metavar = '',required=False,def
 parser.add_argument('-pl','--prods', type = list, metavar = '',required=False, default=[], help='list of items if all = False')
 parser.add_argument('-prod','--product_name', type = str, metavar = '',required=True, help='name of the product for reporting')
 
-###### Example script run from CMD
+##### Example script run from CMD
 
 - A) For all items
 
