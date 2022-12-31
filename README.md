@@ -61,11 +61,11 @@ With same command line, with following change in script:
 
 ### Instruction to generate results 
 
-###### scripts 
+#### scripts 
 - forecasting_train_validation.py
 - individual_report.py
 
-###### Example script run from CMD
+##### Example script run from CMD
 
 - A) For Model Data prep and model training-validation
 
