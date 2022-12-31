@@ -21,6 +21,8 @@
 
 ```
 
+- All inputs files are uploaded except for transactions_train.csv (Dataframe of the purchases each customer for each date with article id) because of size.Make sure to have it under ./data folder.
+
 #### scripts 
 - ./src/report_all.py
 - ./src/individual_report.py
