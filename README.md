@@ -78,6 +78,8 @@ With same command line instruction, make following change in script:
 
 ### Instruction to generate results 
 - clone the repository(git@github.com:nitsourish/New-Yorker-case-study.git)
+-  All inputs files are uploaded except for transactions_train.csv (Dataframe of the purchases each customer for each date with article id) because of size.Make sure to have it under ./data folder.
+-  The productwise trained models also not uploaded.
 
 #### scripts 
 - ./src/forecasting_train_validation.py
@@ -96,6 +98,9 @@ With same command line instruction, make following change in script:
 (To change filtering criteria for eligible product selection need to change penetration and or cum_sales_fraction arguments of function data_prep. For example to select more product reducee the penetration value to penetration=0.001,i.e. data_prep(transaction = train,products=products,penetration=0.001, cum_sales_fraction=0.0)
 
 - B) For forecasting/inference
+
+  As the models are not uploaded please run forecasting_train_validation.py first
+
  ```bash
 
     python forecasting_inference.py > output.log
