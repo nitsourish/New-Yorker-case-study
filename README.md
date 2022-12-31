@@ -2,7 +2,7 @@
 
 ## *Problem 1- Reporting*
 
-### For detailed implementation please refer ./nbs/exploratory.ipynb 
+### For detailed implementation please refer ./nbs/exploratory_report.ipynb 
 
 ### Report Design for Items Frequently and Rarely sold together
 
@@ -22,8 +22,8 @@
 ```
 
 #### scripts 
-- report_all.py
-- individual_report.py
+- ./src/report_all.py
+- ./src/individual_report.py
 
 ##### List of CMD argparse
 
@@ -61,6 +61,8 @@ With same command line instruction, make following change in script:
 
 ## *Problem 2: Interesting Problem - Product level Forecasting(of filtered products)*
 
+### For detailed implementation please refer ./nbs/time_series.ipynb
+
 ### Design
  - A) Product specific Models
  - B) Unit of data- Daily level
@@ -73,11 +75,11 @@ With same command line instruction, make following change in script:
   - B) Alternatively next day forecasting can be done based on last day price level
 
 ### Instruction to generate results 
-- clone the repository
+- clone the repository(git@github.com:nitsourish/New-Yorker-case-study.git)
 
 #### scripts 
-- forecasting_train_validation.py
-- individual_report.py
+- ./src/forecasting_train_validation.py
+- ./src/individual_report.py
 
 ##### Example script run from CMD
 
