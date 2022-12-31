@@ -37,7 +37,7 @@ parser.add_argument('-prod','--product_name', type = str, metavar = '',required=
 
 - B) For list of items
 
-With same command line, with following change in script:
+With same command line instruction, make following change in script:
   -- a) pass list of items in function argument prods with all = False(prepare_all_products_report(df,product_hierarchy = 'prod_name',n=3,all=False,prods = ['Jade HW Skinny Denim TRS','Tilda tank'])) 
   -- b) Alternatively can be provided as CMD argparse with defined format
   
