@@ -16,9 +16,9 @@
 - Clone the repository 
 
 ```bash
-{
+
       git clone git@github.com:nitsourish/New-Yorker-case-study.git
-}
+
 ```
 
 #### scripts 
@@ -40,9 +40,9 @@ parser.add_argument('-prod','--product_name', type = str, metavar = '',required=
 - A) For all items
 
 ```bash
-{
+
       python report_all.py -p 0.01 -ph 'prod_name' -n 3 -m 100
-}
+
 ```
 
 - B) For list of items
@@ -54,9 +54,9 @@ With same command line instruction, make following change in script:
  - C) For individual item detailed report
  
  ```bash
-{
+
      python individual.py -p 0.01 -prod 'Perrie Slim Mom Denim TRS' -n 3 -m 100 > output.log
-}
+
 ```
 
 ## *Problem 2: Interesting Problem - Product level Forecasting(of filtered products)*
@@ -84,16 +84,16 @@ With same command line instruction, make following change in script:
 - A) For Model Data prep and model training-validation
 
  ```bash
-{
+
     python forecasting_train_validation.py > output.log
-}
+
 ```    
 
 (To change filtering criteria for eligible product selection need to change penetration and or cum_sales_fraction arguments of function data_prep. For example to select more product reducee the penetration value to penetration=0.001,i.e. data_prep(transaction = train,products=products,penetration=0.001, cum_sales_fraction=0.0)
 
 - B) For forecasting/inference
  ```bash
-{
+
     python forecasting_inference.py > output.log
-}
+
 ``` 
