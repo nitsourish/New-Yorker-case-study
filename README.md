@@ -1,8 +1,13 @@
 # New-Yorker-case-study
 
+### Firstly install necessary packages preferably inside a virtual environment
+      ``` pip install -r requirements.txt ```
+
 ## *Problem 1- Reporting*
 
 ### For detailed implementation please refer ./nbs/exploratory_report.ipynb 
+
+
 
 ### Report Design for Items Frequently and Rarely sold together
 
@@ -22,6 +27,8 @@
 ```
 
 - All inputs files are uploaded except for transactions_train.csv (Dataframe of the purchases each customer for each date with article id) because of size.Make sure to have it under ./data folder.
+
+- To run and produce results interactively using NoteBook or running scripts
 
 #### scripts 
 - ./src/report_all.py
@@ -90,6 +97,7 @@ With same command line instruction, make following change in script:
 - clone the repository(git@github.com:nitsourish/New-Yorker-case-study.git)
 -  All inputs files are uploaded except for transactions_train.csv (Dataframe of the purchases each customer for each date with article id) because of size.Make sure to have it under ./data folder.
 -  The productwise trained models also not uploaded.
+-  To run and produce results interactively using NoteBook or running scripts
 
 #### scripts 
 - ./src/forecasting_train_validation.py
