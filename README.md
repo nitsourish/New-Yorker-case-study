@@ -1,7 +1,11 @@
 # New-Yorker-case-study
 
 ### Firstly install necessary packages preferably inside a virtual environment
-      ``` pip install -r requirements.txt ```
+      ```bash 
+      
+      pip install -r requirements.txt 
+      
+      ```
 
 ## *Problem 1- Reporting*
 
