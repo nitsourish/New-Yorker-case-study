@@ -27,7 +27,7 @@
 - ./src/report_all.py
 - ./src/individual_report.py
 
-##### List of CMD argparse
+##### Please refer - List of CMD argparse
 
 ```bash
 parser.add_argument('-m','--min_cnt', type = int, metavar = '',required=True,default=0,help='minimum order count for eligible article_id')
@@ -40,6 +40,14 @@ parser.add_argument('-prod','--product_name', type = str, metavar = '',required=
 ```
 
 ##### Example script run from CMD
+
+ - For any script to explore CMD argparse
+ 
+ ```bash
+ 
+ python report_all.py --help
+ 
+ ```
 
 - A) For all items
 
