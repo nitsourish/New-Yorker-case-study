@@ -88,9 +88,11 @@ With same command line instruction, make following change in script:
 ### Design
  - A) Product specific Models
  - B) Unit of data- Daily level
- - C) With approx. 2 years of data, forecasting is for last 2 weeks(14 days) and model trained on rest of the data(for each product)
- - For quick implementation assume quarterly and additive seasonality and Polynomial trend of degree 1
- - I used TransformedTargetForecaster from sktime to build Forecasting pipeline using default XGBoost as regressor
+ - C) With approx. 2 years of data, forecasting is for last 2 weeks(14 days) and model trained on rest of the data(for each product).
+ - considers window_len(lagged features) of 30 days.
+ - used vanila temporal_train_test_split to split data with 2 weeks(14 days) as test_size.  
+ - For quick implementation assume quarterly and additive seasonality and Polynomial trend of degree 1.
+ - I used TransformedTargetForecaster from sktime to build Forecasting pipeline using default XGBoostRF as regressor.
  
  ### Assumption
   - A) Daily price will be available during forecasting period
